@@ -395,9 +395,9 @@ return function(dropdownProperty)
 						TextColor3 = animate(function()
 							if get(multiselect) then
 								if get(isSelected) and not get(hover) then
-									return Color3.fromRGB(85, 220, 135)
+									return Color3.fromRGB(220, 85, 204)
 								elseif get(isSelected) and get(hover) then
-									return Color3.fromRGB(190, 100, 105)
+									return Color3.fromRGB(150, 71, 129)
 								else
 									return theme.get("text")
 								end
