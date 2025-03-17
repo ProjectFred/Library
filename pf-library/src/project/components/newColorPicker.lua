@@ -126,7 +126,7 @@ return function(colorpickerProperty)
 							AnchorPoint = Vector2.new(0,0.5),
 							Position = UDim2.new(0,44,0.5,0),
 							Size = UDim2.new(1,-54,0,16),
-							Font = Enum.Font.GothamBold,
+							Font = Enum.Font.ArialBold,
 							BackgroundTransparency = 1,
 							TextColor3 = animate(function()
 								return theme.get("text")
@@ -171,7 +171,7 @@ return function(colorpickerProperty)
                     Size = UDim2.new(1,-45,0,14),
                     AnchorPoint = Vector2.new(0,0),
                     Position = UDim2.new(0,10,0,13),
-                    Font = Enum.Font.Gotham,
+                    Font = Enum.Font.Arial,
                     TextScaled = true,
                     TextSize = 14,
                     TextXAlignment = Enum.TextXAlignment.Left,
@@ -232,7 +232,7 @@ return function(colorpickerProperty)
                             return generateColor()
                         end,40,1),
                         TextSize = 20,
-                        Font = Enum.Font.GothamMedium,
+                        Font = Enum.Font.ArialBold,
 
                         [onevent "FocusLost"] = function()
                             local HexTextBox = colorPicker:FindFirstChild("HexTextBox", true).Text:gsub("[^%w#]", "")
@@ -283,7 +283,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return tabColor or theme.get("defaultTab")
                                 end,40,1),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.ArialBold,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -292,7 +292,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.Arial,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(roundTo(2,get(hueValue)))
@@ -317,7 +317,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return tabColor or theme.get("defaultTab")
                                 end,40,1),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.ArialBold,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -326,7 +326,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.Arial,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(roundTo(2,get(saturationValue)))
@@ -351,7 +351,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return tabColor or theme.get("defaultTab")
                                 end,40,1),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.ArialBold,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -360,7 +360,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.Arial,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(roundTo(2,get(valueValue)))
@@ -402,7 +402,7 @@ return function(colorpickerProperty)
                             new "TextLabel" {
                                 Text = "R",
                                 TextColor3 = Color3.fromRGB(200,0,0),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.ArialBold,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -411,7 +411,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.Arial,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(math.round(generateColor().R*255))
@@ -433,7 +433,7 @@ return function(colorpickerProperty)
                             new "TextLabel" {
                                 Text = "G",
                                 TextColor3 = Color3.fromRGB(0,200,0),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.ArialBold,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -442,7 +442,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.Arial,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(math.round(generateColor().G*255))
@@ -464,7 +464,7 @@ return function(colorpickerProperty)
                             new "TextLabel" {
                                 Text = "B",
                                 TextColor3 = Color3.fromRGB(0,0,125),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.ArialBold,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -473,7 +473,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.Arial,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(math.round(generateColor().B*255))
