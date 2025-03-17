@@ -6,5 +6,5 @@ return {
         text = Color3.fromRGB(255, 255, 255),
         image = Color3.fromRGB(255,255,255),
         placeholder = Color3.fromRGB(245,245,245),
-        close = Color3.fromRGB(190, 100, 105)
+        close = Color3.fromRGB(255, 255, 255)
 }
