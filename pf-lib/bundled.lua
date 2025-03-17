@@ -5516,7 +5516,7 @@ return function(buttonProperty)
 				Size = UDim2.new(1,-20,0,14),
 				AnchorPoint = Vector2.new(0,0.5),
 				Position = UDim2.new(0,10,0.5,0),
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 				TextScaled = true,
 				TextSize = 14,
 				TextXAlignment = Enum.TextXAlignment.Left,
@@ -5744,7 +5744,7 @@ return function(colorpickerProperty)
                     Size = UDim2.new(1,-45,0,14),
                     AnchorPoint = Vector2.new(0,0),
                     Position = UDim2.new(0,10,0,13),
-                    Font = Enum.Font.Gotham,
+                    Font = Enum.Font.GothamBold,
                     TextScaled = true,
                     TextSize = 14,
                     TextXAlignment = Enum.TextXAlignment.Left,
@@ -5805,7 +5805,7 @@ return function(colorpickerProperty)
                             return generateColor()
                         end,40,1),
                         TextSize = 20,
-                        Font = Enum.Font.GothamMedium,
+                        Font = Enum.Font.GothamBoldMedium,
 
                         [onevent "FocusLost"] = function()
                             local HexTextBox = colorPicker:FindFirstChild("HexTextBox", true).Text:gsub("[^%w#]", "")
@@ -5856,7 +5856,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return tabColor or theme.get("defaultTab")
                                 end,40,1),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.GothamBoldMedium,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -5865,7 +5865,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.GothamBold,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(roundTo(2,get(hueValue)))
@@ -5890,7 +5890,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return tabColor or theme.get("defaultTab")
                                 end,40,1),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.GothamBoldMedium,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -5899,7 +5899,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.GothamBold,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(roundTo(2,get(saturationValue)))
@@ -5924,7 +5924,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return tabColor or theme.get("defaultTab")
                                 end,40,1),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.GothamBoldMedium,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -5933,7 +5933,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.GothamBold,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(roundTo(2,get(valueValue)))
@@ -5975,7 +5975,7 @@ return function(colorpickerProperty)
                             new "TextLabel" {
                                 Text = "R",
                                 TextColor3 = Color3.fromRGB(200,0,0),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.GothamBoldMedium,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -5984,7 +5984,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.GothamBold,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(math.round(generateColor().R*255))
@@ -6006,7 +6006,7 @@ return function(colorpickerProperty)
                             new "TextLabel" {
                                 Text = "G",
                                 TextColor3 = Color3.fromRGB(0,200,0),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.GothamBoldMedium,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -6015,7 +6015,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.GothamBold,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(math.round(generateColor().G*255))
@@ -6037,7 +6037,7 @@ return function(colorpickerProperty)
                             new "TextLabel" {
                                 Text = "B",
                                 TextColor3 = Color3.fromRGB(0,0,125),
-                                Font = Enum.Font.GothamMedium,
+                                Font = Enum.Font.GothamBoldMedium,
                                 BackgroundTransparency = 1,
                                 Size = UDim2.fromOffset(55,14)
                             },
@@ -6046,7 +6046,7 @@ return function(colorpickerProperty)
                                 TextColor3 = animate(function()
                                     return theme.get("text")
                                 end,40,1),
-                                Font = Enum.Font.Gotham,
+                                Font = Enum.Font.GothamBold,
                                 BackgroundTransparency = 1,
                                 Text = computed(function()
                                     return tostring(math.round(generateColor().B*255))
@@ -6332,7 +6332,7 @@ return function(dropdownProperty)
 					Size = UDim2.new(1,-45,0,14),
 					AnchorPoint = Vector2.new(0,0),
 					Position = UDim2.new(0,10,0,13),
-					Font = Enum.Font.Gotham,
+					Font = Enum.Font.GothamBold,
 					TextScaled = true,
 					TextSize = 14,
 					TextXAlignment = Enum.TextXAlignment.Left,
@@ -6455,7 +6455,7 @@ return function(dropdownProperty)
 				Text = "",
 				AnchorPoint = Vector2.new(0.5,0),
 				PlaceholderText = "Search",
-				Font = Enum.Font.GothamMedium,
+				Font = Enum.Font.GothamBoldMedium,
 				TextSize = 16,
 				TextXAlignment = Enum.TextXAlignment.Left,
 
@@ -6623,7 +6623,7 @@ return function(dropdownProperty)
 						BackgroundTransparency = 1,
 						Position = UDim2.fromScale(0.5,0.5),
 						AnchorPoint = Vector2.new(0.5,0.5),
-						Font = Enum.Font.Gotham,
+						Font = Enum.Font.GothamBold,
 						TextSize = 12,
 						TextXAlignment = Enum.TextXAlignment.Left,
 
@@ -6880,7 +6880,7 @@ return function(groupProperty)
                     return tabColor or theme.get("defaultTab")
                 end,40,1),
                 BackgroundTransparency = 1,
-                Font = Enum.Font.GothamMedium,
+                Font = Enum.Font.GothamBoldMedium,
                 Size = computed(function()
                     if get(hasImage) then
                         return UDim2.new(1,-54,0,16)
@@ -7146,7 +7146,7 @@ return function(keybindProperty)
 					Size = UDim2.new(1,-60,0,14),
 					AnchorPoint = Vector2.new(0,0.5),
 					Position = UDim2.new(0,10,0.5,0),
-					Font = Enum.Font.Gotham,
+					Font = Enum.Font.GothamBold,
 					TextScaled = true,
 					TextSize = 14,
 					TextXAlignment = Enum.TextXAlignment.Left,
@@ -7193,7 +7193,7 @@ return function(keybindProperty)
 				BackgroundTransparency = 1,
 				TextXAlignment = Enum.TextXAlignment.Center,
 				PlaceholderText = ". . .",
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 				TextSize = 12,
 
 				PlaceholderColor3 = animate(function()
@@ -7289,7 +7289,7 @@ return function(labelProperty)
 			new "UICorner" {CornerRadius = UDim.new(0,4)},
 			new "TextLabel" {
 				ZIndex = 2,
-				Font = Enum.Font.GothamMedium,
+				Font = Enum.Font.GothamBoldMedium,
 				TextSize = 14,
 				RichText = true,
 				TextScaled = true,
@@ -7378,7 +7378,7 @@ return function(notificationProperty)
     local duration = value(notificationProperty.Duration)
     local bodySize = value(getStringBounds(notificationProperty.Body, {
         TextSize = 13,
-        Font = Enum.Font.Gotham,
+        Font = Enum.Font.GothamBold,
         VectorSize = Vector2.new(230,1000)
     }).Y)
     local loaded = value(false)
@@ -7435,7 +7435,7 @@ return function(notificationProperty)
                         Size = UDim2.new(1,-5,0,18),
                         Position = UDim2.new(0,5,0,5),
                         BackgroundTransparency = 1,
-                        Font = Enum.Font.GothamMedium,
+                        Font = Enum.Font.GothamBoldMedium,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         TextSize = 18,
 
@@ -7449,7 +7449,7 @@ return function(notificationProperty)
                         Size = UDim2.new(1,-8,0,get(bodySize)),
                         Position = UDim2.fromOffset(8,25),
                         BackgroundTransparency = 1,
-                        Font = Enum.Font.Gotham,
+                        Font = Enum.Font.GothamBold,
                         TextSize = 13,
                         TextXAlignment = Enum.TextXAlignment.Left,
                         TextYAlignment = Enum.TextYAlignment.Top,
@@ -7553,14 +7553,14 @@ return function(paragraphProperty)
 	local titleValue = value(paragraphProperty.Title)
 	local bodyValue = value(paragraphProperty.Body)
 	local ySize = value(getStringBounds(get(bodyValue),{
-		Font = Enum.Font.Gotham,
+		Font = Enum.Font.GothamBold,
 		VectorSize = Vector2.new(math.round(paragraphProperty.Parent.AbsoluteSize.X),1000),
 		TextSize = 12
 	}).Y)
 	paragraphProperty.Parent.Changed:Connect(function(paragraphPropertyerty)
 		if paragraphPropertyerty:lower() == "absolutesize" then
 			ySize:set(getStringBounds(get(bodyValue),{
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 				VectorSize = Vector2.new(math.round(paragraphProperty.Parent.AbsoluteSize.X),1000),
 				TextSize = 12
 			}).Y)
@@ -7568,7 +7568,7 @@ return function(paragraphProperty)
 	end)
 	observe(bodyValue):onChange(function()
 		ySize:set(getStringBounds(get(bodyValue),{
-			Font = Enum.Font.Gotham,
+			Font = Enum.Font.GothamBold,
 			VectorSize = Vector2.new(math.round(paragraphProperty.Parent.AbsoluteSize.X),1000),
 			TextSize = 12
 		}).Y)
@@ -7602,7 +7602,7 @@ return function(paragraphProperty)
 				TextYAlignment = Enum.TextYAlignment.Top,
 				TextScaled = true,
 				TextSize = 16,
-				Font = Enum.Font.GothamMedium,
+				Font = Enum.Font.GothamBoldMedium,
 
 				TextColor3 = animate(function()
 					return theme.get("text")
@@ -7627,7 +7627,7 @@ return function(paragraphProperty)
 				TextXAlignment = Enum.TextXAlignment.Left,
 				TextYAlignment = Enum.TextYAlignment.Top,
 				TextSize = 12,
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 
 				TextColor3 = animate(function()
 					return lerpColor(theme.get("text"),"black",0.1)
@@ -7694,7 +7694,7 @@ return function(sectionProperty)
 				Position = UDim2.new(0,5,0.5,0),
 				BackgroundTransparency = 1,
 				TextScaled = true,
-				Font = Enum.Font.GothamMedium,
+				Font = Enum.Font.GothamBoldMedium,
 				TextXAlignment = Enum.TextXAlignment.Left,
 
 				TextColor3 = animate(function()
@@ -7905,7 +7905,7 @@ return function(sliderProperty)
 					Size = UDim2.new(1,-220,0,14),
 					AnchorPoint = Vector2.new(0,0.5),
 					Position = UDim2.new(0,10,0.5,0),
-					Font = Enum.Font.Gotham,
+					Font = Enum.Font.GothamBold,
 					TextScaled = true,
 					TextSize = 14,
 					TextXAlignment = Enum.TextXAlignment.Left,
@@ -8009,7 +8009,7 @@ return function(sliderProperty)
 				TextColor3 = animate(function()
 					return theme.get("text")
 				end,40,1),
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 				TextSize = 14,
 				TextXAlignment = Enum.TextXAlignment.Right,
 				TextScaled = true,
@@ -8116,7 +8116,7 @@ return function(tbl)
 	do
 		local xySize = getStringBounds(get(name), {
 			TextSize = 14,
-			Font = Enum.Font.GothamMedium,
+			Font = Enum.Font.GothamBoldMedium,
 			VectorSize = Vector2.new(10000,14)
 		})
 		if xySize.X < 449 then
@@ -8125,7 +8125,7 @@ return function(tbl)
 			for i=1,14 do
 				local tmpXY = getStringBounds(get(name), {
 					TextSize = 14-i,
-					Font = Enum.Font.GothamMedium,
+					Font = Enum.Font.GothamBoldMedium,
 					VectorSize = Vector2.new(450,40)
 				})
 				if tmpXY.X < 450 and tmpXY.Y < 14 then
@@ -8207,7 +8207,7 @@ return function(tbl)
 					end
 					return 1
 				end,20,1),
-				Font = Enum.Font.GothamMedium,
+				Font = Enum.Font.GothamBoldMedium,
 				TextColor3 = animate(function()
 					return theme.get("text")
 				end,40,1),
@@ -8413,7 +8413,7 @@ return function(textboxProperty)
 					Size = UDim2.new(1,-185,0,14),
 					AnchorPoint = Vector2.new(0,0.5),
 					Position = UDim2.new(0,10,0.5,0),
-					Font = Enum.Font.Gotham,
+					Font = Enum.Font.GothamBold,
 					TextScaled = true,
 					TextSize = 14,
 					TextXAlignment = Enum.TextXAlignment.Left,
@@ -8461,7 +8461,7 @@ return function(textboxProperty)
 				TextScaled = true,
 				TextXAlignment = Enum.TextXAlignment.Left,
 				PlaceholderText = "Input Here",
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 				TextSize = 12,
 
 				PlaceholderColor3 = animate(function()
@@ -8664,7 +8664,7 @@ return function(toggleProperty)
 				Size = UDim2.new(1,-45,0,14),
 				AnchorPoint = Vector2.new(0,0.5),
 				Position = UDim2.new(0,10,0.5,0),
-				Font = Enum.Font.Gotham,
+				Font = Enum.Font.GothamBold,
 				TextScaled = true,
 				TextSize = 14,
 				TextXAlignment = Enum.TextXAlignment.Left,
@@ -8781,7 +8781,7 @@ return function(windowProperty)
 				Text = windowProperty.Name,
 				BackgroundTransparency = 1,
 				TextScaled = true,
-				Font = Enum.Font.GothamMedium,
+				Font = Enum.Font.GothamBoldMedium,
 				TextXAlignment = Enum.TextXAlignment.Left,
 				TextTransparency = 0.75,
 
