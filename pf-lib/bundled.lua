@@ -5377,8 +5377,8 @@ end)() end,
         tertiaryBackground = Color3.fromRGB(255, 211, 247),
         text = Color3.fromRGB(255, 255, 255),
         image = Color3.fromRGB(255,255,255),
-        placeholder = Color3.fromRGB(245,245,245),
-        close = Color3.fromRGB(190, 100, 105)
+        placeholder = Color3.fromRGB(255,255,255),
+        close = Color3.fromRGB(255, 255, 255)
 }
 end)() end,
     [74] = function()local wax,script,require=ImportGlobals(74)local ImportGlobals return (function(...)local project = script.Parent.Parent
@@ -9507,7 +9507,7 @@ end)() end,
         text = Color3.fromRGB(255, 255, 255),
         image = Color3.fromRGB(255,255,255),
         placeholder = Color3.fromRGB(245,245,245),
-        close = Color3.fromRGB(190, 100, 105)
+        close = Color3.fromRGB(255, 255, 255)
 }
 end)() end,
     [92] = function()local wax,script,require=ImportGlobals(92)local ImportGlobals return (function(...)local project = require(script.Parent)
