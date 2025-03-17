@@ -1,1 +1,1 @@
-return loadstring(game:HttpGet("https://raw.githubusercontent.com/ProjectFred/Library/normal/bundled.lua"))()
+return loadstring(game:HttpGet("https://raw.githubusercontent.com/ProjectFred/Library/pf-library/bundled.lua"))()
