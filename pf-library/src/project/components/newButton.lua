@@ -88,6 +88,7 @@ return function(buttonProperty)
 							Position = UDim2.new(0,44,0.5,0),
 							Size = UDim2.new(1,-54,0,16),
 							Font = Enum.Font.GothamBold,
+							RichText = True
 							BackgroundTransparency = 1,
 							TextSize = 16,
 							TextScaled = true,
@@ -134,6 +135,7 @@ return function(buttonProperty)
 				AnchorPoint = Vector2.new(0,0.5),
 				Position = UDim2.new(0,10,0.5,0),
 				Font = Enum.Font.Gotham,
+				RichText = True
 				TextScaled = true,
 				TextSize = 14,
 				TextXAlignment = Enum.TextXAlignment.Left,
