@@ -5372,7 +5372,7 @@ return themeSystem
 end)() end,
     [72] = function()local wax,script,require=ImportGlobals(72)local ImportGlobals return (function(...)return {
         defaultTab = Color3.fromHex("#ffd3f7"),
-        background = Color3.fromRGB(129, 114, 126),
+        background = Color3.fromRGB(64, 56, 63),
         secondaryBackground = Color3.fromRGB(97, 85, 94),
         tertiaryBackground = Color3.fromRGB(255, 211, 247),
         text = Color3.fromRGB(255, 255, 255),
@@ -9501,7 +9501,7 @@ end
 end)() end,
     [91] = function()local wax,script,require=ImportGlobals(91)local ImportGlobals return (function(...)return {
         defaultTab = Color3.fromHex("#ffd3f7"),
-        background = Color3.fromRGB(129, 114, 126),
+        background = Color3.fromRGB(64, 56, 63),
         secondaryBackground = Color3.fromRGB(97, 85, 94),
         tertiaryBackground = Color3.fromRGB(255, 211, 247),
         text = Color3.fromRGB(255, 255, 255),
